@@ -1,0 +1,53 @@
+# Base de datos de frutas
+baseDeDatosFrutas = {
+    "manzana": {
+        "color": "rojo",
+        "vitamina": "C"
+    },
+    "plátano": {
+        "color": "amarillo",
+        "vitamina": "B6"
+    },
+    "naranja": {
+        "color": "naranja",
+        "vitamina": "C"
+    },
+    "uva": {
+        "color": "morado",
+        "vitamina": "K"
+    }
+}
+
+# Chatbot simple
+while True:
+    usuario = input("Haz tu pregunta: ").lower()
+
+    if usuario == "hola":
+        print("Hola, ¿en qué puedo ayudarte?")
+    
+    elif usuario == "color de manzana":
+        print("El color de la manzana es", baseDeDatosFrutas["manzana"]["color"])
+    
+    elif usuario == "vitamina de manzana":
+        print("La manzana tiene vitamina", baseDeDatosFrutas["manzana"]["vitamina"])
+    
+    elif usuario == "color de plátano":
+        print("El color del plátano es", baseDeDatosFrutas["plátano"]["color"])
+
+    elif usuario == "vitamina de plátano":
+        print("El plátano tiene vitamina", baseDeDatosFrutas["plátano"]["vitamina"])
+
+    elif usuario == "color de naranja":
+        print("El color de la naranja es", baseDeDatosFrutas["naranja"]["color"])
+
+    elif usuario == "vitamina de naranja":
+        print("La naranja tiene vitamina", baseDeDatosFrutas["naranja"]["vitamina"])
+
+    elif usuario == "color de uva":
+        print("El color de la uva es", baseDeDatosFrutas["uva"]["color"])
+
+    elif usuario == "vitamina de uva":
+        print("La uva tiene vitamina", baseDeDatosFrutas["uva"]["vitamina"])
+
+    else:
+        print("No tengo datos sobre eso.")
